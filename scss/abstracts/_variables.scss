@@ -1,0 +1,59 @@
+@use 'media-queries' as *;
+
+:root {
+  // Colors
+  --clr-primary-400: hsl(22, 89%, 52%);
+  --clr-primary-500: hsl(22, 100%, 69%);
+
+  --clr-secondary-400: hsl(220, 50%, 17%);
+  --clr-secondary-500: hsl(221, 23%, 58%);
+
+  --clr-neutral-800: hsl(198, 28%, 93%);
+  --clr-neutral-900: hsl(0, 0%, 100%);
+
+  --clr-heading: var(--clr-secondary-400);
+  --clr-body: var(--clr-secondary-500);
+
+  // Font family
+  --ff-primary: 'Barlow', sans-serif;
+
+  // Font weights
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  // Font sizes
+  --fs-400: 1rem;
+  --fs-500: 1.125rem;
+  --fs-600: 1.5rem;
+  --fs-700: 2rem;
+  --fs-800: 3rem;
+
+  --fs-body: var(--fs-400);
+  --fs-button: var(--fs-400);
+  --fs-heading-tertiary: var(--fs-600);
+  --fs-heading-secondary: var(--fs-700);
+  --fs-heading-primary: var(--fs-800);
+
+  @include respond(lg) {
+    --fs-800: 3.5rem;
+  }
+
+  // Sizes
+  --size-unit: 1rem;
+  --size-xs: calc(var(--size-unit) * 0.125);
+  --size-s: calc(var(--size-unit) * 0.25);
+  --size-100: calc(var(--size-unit) * 0.5);
+  --size-200: calc(var(--size-unit) * 0.75);
+  --size-300: calc(var(--size-unit) * 1);
+  --size-400: calc(var(--size-unit) * 1.5);
+  --size-500: calc(var(--size-unit) * 1.875);
+  --size-600: calc(var(--size-unit) * 2);
+  --size-700: calc(var(--size-unit) * 2.125);
+  --size-800: calc(var(--size-unit) * 2.5);
+  --size-900: calc(var(--size-unit) * 3);
+  --size-lg: calc(var(--size-unit) * 4);
+
+  // Border radius
+  --br-400: 1.25rem;
+}

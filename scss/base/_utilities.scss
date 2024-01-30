@@ -1,0 +1,14 @@
+@use '../abstracts/' as *;
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.tt-uppercase {
+  text-transform: uppercase;
+}
+
+.new-line::before {
+  content: '\a';
+  white-space: pre;
+}

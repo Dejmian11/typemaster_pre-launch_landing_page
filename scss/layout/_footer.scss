@@ -1,0 +1,18 @@
+@use '../abstracts/' as *;
+
+.footer {
+  padding-block: 3.125rem;
+
+  @include respond(md) {
+    padding-block: 2.75rem;
+  }
+
+  @include respond(lg) {
+    padding-block: var(--size-800);
+  }
+
+  &__layout {
+    display: grid;
+    place-content: center;
+  }
+}

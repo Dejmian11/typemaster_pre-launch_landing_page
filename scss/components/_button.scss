@@ -1,0 +1,42 @@
+@use '../abstracts/' as *;
+
+%btn {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  @extend %btn;
+
+  padding: 0.6875em 0.875em;
+  border: 0;
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-900);
+  font-size: var(--fs-button);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  border-radius: 0.5em;
+  transition: 0.25s;
+
+  &:is(:hover, :focus-visible) {
+    background-color: var(--clr-primary-500);
+  }
+
+  @include respond(md) {
+    padding: 1em 1.6875em;
+  }
+
+  &[data-color='neutral'] {
+    background-color: var(--clr-neutral-800);
+    color: var(--clr-secondary-400);
+
+    &:is(:hover, :focus-visible) {
+      background-color: var(--clr-secondary-400);
+      color: var(--clr-neutral-900);
+    }
+  }
+}
