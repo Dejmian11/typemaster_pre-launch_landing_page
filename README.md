@@ -1,6 +1,6 @@
 # Frontend Mentor - Typemaster pre-launch landing page solution
 
-This is a solution to the [Typemaster pre-launch landing page challenge on Frontend Mentor](). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Typemaster pre-launch landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/typemaster-prelaunch-landing-page-J6-Yj5J-X). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -15,15 +15,12 @@ This is a solution to the [Typemaster pre-launch landing page challenge on Front
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-
-
+![](https://github.com/Dejmian11/typemaster_pre-launch_landing_page/blob/main/assets/design/Screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/typemaster-prelaunch-landing-page-build-with-sass-aEKeZGhsWJ))
+- Live Site URL: [Live]([https://your-live-site-url.com](https://animated-gingersnap-ebab10.netlify.app/))
 
 ## My process
 
