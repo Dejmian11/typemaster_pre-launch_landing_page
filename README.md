@@ -19,8 +19,8 @@ This is a solution to the [Typemaster pre-launch landing page challenge on Front
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com](https://www.frontendmentor.io/solutions/typemaster-prelaunch-landing-page-build-with-sass-aEKeZGhsWJ)
-- Live Site URL: [Live](https://your-live-site-url.com](https://animated-gingersnap-ebab10.netlify.app/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/typemaster-prelaunch-landing-page-build-with-sass-aEKeZGhsWJ)
+- Live Site URL: [Live](https://animated-gingersnap-ebab10.netlify.app/)
 
 ## My process
 
