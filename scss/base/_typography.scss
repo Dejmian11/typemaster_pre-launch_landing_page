@@ -19,6 +19,11 @@ body {
     text-transform: uppercase;
   }
 
+  .heading-secondary,
+  .heading-tertiary {
+    line-height: 1.16;
+  }
+
   .heading-primary {
     font-size: var(--fs-heading-primary);
   }

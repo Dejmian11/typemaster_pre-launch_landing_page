@@ -12,19 +12,21 @@
   @include respond(md) {
     --content-spacing: 4.3125rem;
 
-    grid-template-columns: 340px 1fr;
+    grid-template-columns: 21.25rem 1fr;
     padding-block: 1.375rem var(--size-800);
   }
 
   @include respond(lg) {
     --content-spacing: 7.8125rem;
 
-    grid-template-columns: 445px 1fr;
+    grid-template-columns: 27.8125rem 1fr;
     padding-block: 1.75rem var(--size-500);
   }
 
   ///// FLOW /////
   & > .flow {
+    animation: fade-in var(--animation-duration);
+
     @include respond(md) {
       --content-spacing: var(--size-700);
 
@@ -62,29 +64,33 @@
   ///// IMAGE /////
   &__img {
     position: relative;
-    min-width: min(113%, 540px);
+    min-width: min(113%, 33.75rem);
 
     @include respond(md) {
-      min-width: 478px;
+      min-width: 29.875rem;
     }
 
     @include respond(lg) {
-      min-width: 540px;
+      min-width: 33.75rem;
 
       &::after {
         @include pseudo;
 
         top: 0;
         left: calc(100% + var(--size-500));
-        height: 240px;
-        width: 255px;
-        background-color: var(--clr-neutral-800);
-        border-radius: var(--br-400);
+        height: 15rem;
+        width: 15.9375rem;
+        background-image: url('/assets/design/pattern-square.svg');
       }
     }
 
     & img {
       border-radius: var(--br-400);
+    }
+
+    &::after,
+    & img {
+      animation: fade-right calc(var(--animation-duration) - 1s);
     }
   }
 }
@@ -124,12 +130,11 @@
 
   ///// IMAGES /////
   & img {
-    min-height: 193px;
+    min-height: 12.0625rem;
     border-radius: var(--br-400);
-    mix-blend-mode: multiply;
 
     @include respond(xl) {
-      max-height: 480px;
+      max-height: 30rem;
     }
   }
 
@@ -137,8 +142,16 @@
     &:first-child {
       position: relative;
       margin-left: -2.9375rem;
-      background-color: var(--clr-primary-400);
       border-radius: var(--br-400);
+
+      &::after {
+        @include pseudo;
+
+        inset: 0;
+        border-radius: var(--br-400);
+        background-color: var(--clr-primary-400);
+        mix-blend-mode: multiply;
+      }
 
       @include respond(md) {
         margin-left: 0;
@@ -146,24 +159,23 @@
 
       @include respond(xl) {
         position: relative;
-        min-width: 255px;
+        min-width: 15.9375rem;
 
-        &::after {
+        &::before {
           @include pseudo;
 
           bottom: 0;
           right: calc(100% + var(--size-500));
-          height: 240px;
-          width: 255px;
-          background-color: var(--clr-neutral-800);
-          border-radius: var(--br-400);
+          height: 15rem;
+          width: 15.9375rem;
+          background-image: url('/assets/design/pattern-square.svg');
         }
       }
     }
 
     &:last-child {
       @include respond(xl) {
-        min-width: 445px;
+        min-width: 27.8125rem;
       }
     }
   }
@@ -223,6 +235,7 @@
     }
   }
 
+  ///// FEATURE /////
   .feature {
     --content-spacing: var(--size-400);
 
